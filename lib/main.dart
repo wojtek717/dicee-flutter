@@ -14,6 +14,28 @@ class DicePage extends StatelessWidget {
           title: Text('Dicee'),
           backgroundColor: Colors.red,
         ),
+        body: Center(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Image(
+                    image: AssetImage('images/dice1.png'),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Image(
+                    image: AssetImage('images/dice2.png'),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
